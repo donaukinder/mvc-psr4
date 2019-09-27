@@ -3,11 +3,11 @@ require 'environment.php';
 
 $config = array();
 if (ENVIRONMENT == 'development') {
-    define("BASE_URL", "http://localhost/");
+    define("BASE_URL", "http://localhost/psr4");
     $config['dbname'] = 'psr4';
     $config['host'] = 'localhost';
-    $config['dbuser'] = 'admin';
-    $config['dbpass'] = 'admin';
+    $config['dbuser'] = 'root';
+    $config['dbpass'] = 'root';
 } else {
     define("BASE_URL", "http://meusite.com.br/");
     $config['dbname'] = 'classificados';
