@@ -2,19 +2,19 @@
 namespace Controllers;
 
 use \Core\Controller;
-use \Models\Users;
+use Models\Users;
 
 class HomeController extends Controller
 {
 
     public function index()
     {
-        $dados = array();
+        $data = array();
 
         $users = new Users();
-        $dados['lista'] = $users->getAll();
+        $data['users'] = $users->getAll();
 
-        $this->loadTemplate('home', $dados);
+        $this->loadTemplate('home', $data);
 
     }
 }

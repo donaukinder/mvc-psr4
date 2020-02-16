@@ -4,10 +4,10 @@ require 'environment.php';
 $config = array();
 if (ENVIRONMENT == 'development') {
     define("BASE_URL", "http://localhost/psr4");
-    $config['dbname'] = 'psr4';
+    $config['dbname'] = 'users';
     $config['host'] = 'localhost';
-    $config['dbuser'] = 'root';
-    $config['dbpass'] = 'root';
+    $config['dbuser'] = 'admin';
+    $config['dbpass'] = 'admin';
 } else {
     define("BASE_URL", "http://meusite.com.br/");
     $config['dbname'] = 'classificados';
